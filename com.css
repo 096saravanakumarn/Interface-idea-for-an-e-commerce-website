@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home-bar {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(228, 224, 224);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.menu-items {
+    position: relative;
+    width: 100%;
+}
+
+.menu-items ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+}
+
+.menu-items li:hover .fa-house,
+.menu-items li:hover .fa-bell,
+.menu-items li:hover .fa-user,
+.menu-items li:hover .fa-cart,
+.menu-items li:hover .fa-list-ul,
+.menu-items li:hover .fa-cart-shopping {
+    color: #2428ff;
+    animation: shake 0.15s linear infinite;
+}
+
+.menu-items li:hover {
+    color: #2428ff;
+}
+
+.menu-items .fa-xmark {
+    display: none;
+}
+
+.bars {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    cursor: pointer;
+    display: none;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.menu-items {
+    margin-left: 7rem;
+}
+
+.search-things {
+    margin-left: 2rem;
+}
+
+.search-box {
+    position: relative;
+    right: 120px;
+    bottom: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.search-box input {
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.fa-magnifying-glass {
+    padding-right: 10px;
+}
+
+.logo {
+    padding-left: 20px;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.logo-container {
+    width: 140px;
+    height: 30px;
+    background-color: rgb(52, 52, 245);
+    border-radius: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.logo-container:hover {
+    box-shadow: 2px 0px 7px rgb(118, 118, 255);
+}
+
+.fa-a {
+    color: yellow;
+}
+
+#category {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2428ff;
+    position: relative;
+
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 30px;
+    position: relative;
+}
+
+.fa-angle-down {
+    position: relative;
+    top: 2px;
+    font-size: 15px;
+}
+
+.left-side {
+    position: relative;
+    left: 0;
+}
+
+#down-content {
+    width: 100%;
+    height: max-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    top: 73px;
+    padding: 20px;
+}
+
+.left-side {
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.right-side {
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 7px rgb(216, 216, 216);
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    margin-left: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-box1 {
+    width: 240px;
+    height: 260px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.buy-but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: #df1010;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 20;
+    font-weight: 600;
+    border: none;
+}
+
+.add-content {
+    background-image: url("assert/central-shopping-mall-one-day-sale-everything-at-55-off-ad-times-of-india-mumbai-11-07-2018.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 7px rgb(226, 226, 227);
+    width: 400px;
+    height: 530px;
+    margin: 10px;
+}
+
+.add-con {
+    background-image: url("assert/lifestyle-shopping-mall-flat-25-off-ad-bombay-times-07-04-2018.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 7px rgb(209, 209, 210);
+    width: 400px;
+    height: 280px;
+}
+
+.exc_off {
+    width: 70%;
+    background-color: #2428ff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 30px 0 30px 0;
+    border: 2px solid white;
+}
+
+.img1 {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+
+}
+
+.img10 {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+}
+
+.off {
+    background-color: #df1010;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 5px;
+    padding: 2px;
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+
+.img-details p {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 148px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ratings {
+    position: absolute;
+    font-size: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 61%;
+    right: 4%;
+    background-color: #df1010;
+    color: white;
+    padding: 2.5px;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+#add-content-2 {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.add1 {
+    width: 100vh;
+    height: 50vh;
+}
+
+.add1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.add2 {
+    width: 70vh;
+    height: 300px;
+}
+
+.add2 img {
+    height: 100%;
+    width: 100%;
+}
+
+#contact {
+    background-color: #2b2d34;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #ffffff;
+}
+
+#contact h2 {
+    position: absolute;
+    top: 5px;
+}
+
+.contact-content {
+    background-color: #ffffff;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.contact-content-1 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content-1 h1 {
+    font-size: 1.5rem;
+    background-color: #e7e7e7;
+    padding: 3px;
+    color: #2b2d34;
+}
+
+.contact-content-1 ul li {
+    list-style: none;
+}
+
+.contact-content-1 ul {
+    padding-top: 10px;
+}
+
+.contact-content-1 ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content-1 ul li a:hover {
+    text-decoration: underline;
+}
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    background-color: #2428ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    right: 10px;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.icons {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.icons:hover {
+    color: #dcdcdc;
+}
+
+@media only screen and (max-width:1000px) {
+    .home-bar {
+        width: 100vw;
+        height: 10vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        position: fixed;
+    }
+
+    .search-box {
+        width: 260px;
+        height: 35px;
+        position: absolute;
+        left: 35%;
+        bottom: 23%;
+    }
+
+    nav ul {
+        background: rgb(255, 255, 255);
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100%;
+        border-left: 2px solid #dcd9d9;
+        padding-top: 50px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bars {
+        display: block;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .search-box{
+        display: none;
+    }
+    .menu-items .fa-xmark {
+        display: block;
+        background-color: #2428ff;
+        color: white;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        left: 10%;
+    }
+
+    #down-content {
+        width: 100%;
+        height: max-content;
+        background-color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        top: 73px;
+    }
+
+    .left-side {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right-side {
+        width: 100%;
+        height: 100%;
+        background-color: #ececec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact {
+        background-color: #2b2d34;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: #ffffff;
+    }
+
+    .contact-content-1 {
+        width: 100%;
+        height: 20%;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+}
